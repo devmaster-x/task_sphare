@@ -1,0 +1,99 @@
+# === Ruby on Rails (api/) ===
+api/log/
+api/tmp/
+api/storage/
+api/public/packs/
+api/public/packs-test/
+api/vendor/bundle/
+api/.bundle/
+api/db/*.sqlite3
+api/db/*.sqlite3-journal
+api/db/cable_schema.rb
+api/db/cache_schema.rb
+api/db/queue_schema.rb
+
+# === React (ui/) ===
+ui/node_modules/
+ui/build/
+ui/dist/
+
+# === Environment Variables ===
+.env
+.env.local
+.env.*.local
+api/.env
+api/.env.local
+api/.env.*.local
+ui/.env.local
+ui/.env.*.local
+
+# === IDE & Editor Settings ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+*.tmp
+
+# === Logs ===
+*.log
+log/
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Rails Specific ===
+api/public/uploads/
+api/config/credentials.yml.enc.local
+api/config/master.key
+api/spec/fixtures/files/*
+!api/spec/fixtures/files/.gitkeep
+
+# === React Specific ===
+ui/.pnp
+ui/.pnp.js
+ui/coverage/
+ui/.eslintcache
+
+# === Node ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn
+yarn.lock
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+*.icloud
+
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Bundler ===
+api/Gemfile.lock
+
+# === Ruby ===
+api/.ruby-version
+api/.ruby-gemset
+
+# === Docker ===
+api/.dockerignore
+
+# === General ===
+.env.production.local
+config/master.key
+
