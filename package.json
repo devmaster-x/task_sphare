@@ -1,0 +1,25 @@
+{
+  "name": "task-share",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "tailwindcss -i ./app/javascript/styles/application.css -o ./app/assets/builds/application.css --minify",
+    "dev": "node esbuild.config.mjs",
+    "watch:css": "tailwindcss -i ./app/javascript/styles/application.css -o ./app/assets/builds/application.css --watch"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5",
+    "axios": "^1.13.2"
+  },
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "esbuild": "^0.24.0",
+    "tailwindcss": "^4.1.17",
+    "postcss": "^8.5.6",
+    "autoprefixer": "^10.4.21"
+  }
+}
+
