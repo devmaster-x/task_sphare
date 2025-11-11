@@ -68,7 +68,7 @@ rails server
 ## 📁 Project Structure
 
 ```
-api/                              # Rails monolith
+# Rails monolith
 ├── app/
 │   ├── javascript/               # React frontend
 │   │   ├── entrypoints/application.js

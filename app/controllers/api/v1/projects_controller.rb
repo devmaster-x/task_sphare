@@ -1,6 +1,7 @@
 module Api
   module V1
     class ProjectsController < ApplicationController
+      skip_before_action :verify_authenticity_token
       before_action :set_project, only: [:show, :update, :destroy]
 
       # GET /api/v1/projects

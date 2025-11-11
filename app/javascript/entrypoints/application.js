@@ -26,8 +26,12 @@ function App() {
   );
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const root = createRoot(document.getElementById('root'));
+// Mount the React app
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = createRoot(rootElement);
   root.render(<App />);
-});
+} else {
+  console.error('Root element not found!');
+}
 
